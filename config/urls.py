@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from habit_tracker.views import habit_tracker
+from habit_tracker.views import habit_tracker, my_habits, top_bar_paths
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', habit_tracker, name='habit_tracker')
+    path('', top_bar_paths, name='Dashboard'),
+    path('my_habits', top_bar_paths, name='My Habits'),
+    path('stats', top_bar_paths, name='Stats'),
 ]

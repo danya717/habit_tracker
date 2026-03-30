@@ -14,12 +14,31 @@
     position: absolute;
 }
 
+.top_bar_paths {
+    position: absolute;
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    left: 30%;
+    top: 25%;
+}
+
+.top_bar_path {
+    color: white;
+    text-decoration: none;
+}
+
+.top_bar_path:hover {
+    text-decoration: underline;
+    underline-color: blue;
+}
+
 .main_page_title {
     color: white;
     font-family: sans-serif;
     font-size: 25px;
     position: absolute;
-    top: -65%;
+    top: -55%;
     left: 1%;
 }
 
