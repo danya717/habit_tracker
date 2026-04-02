@@ -149,3 +149,33 @@
     left: 10%;
     top: 10%;
 }
+
+.all_habits_menu {
+    background-color: white;
+    width: 90%;
+    height: 40%;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+.all_habits {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    display: grid;
+    gap: 0px;
+}
+
+.habits_title_menu {
+    background-color: grey;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+}
+
+.all_habits_menu_title {
+    position: absolute;
+    left: 5%;
+    top: -5%;
+}

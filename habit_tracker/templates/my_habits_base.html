@@ -1,0 +1,33 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title> {% block title %} habit_tracker {% endblock %}</title>
+</head>
+<body>
+    <div class="main_page">
+        <div class="top_bar">
+            {% block page_title %}
+                <p class="main_page_title">HabitTracker</p>
+            {% endblock %}
+            <div class="top_bar_paths">
+                {% for path in paths %}
+                    <a class="top_bar_path" href="{% url path %}">{{ path }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="all_habits_menu">
+            <div class="habits_title_menu">
+                <p class="all_habits_menu_title">Habit</p>
+            </div>
+            <div class="all_habits">
+              <p class="my_habits_page_habits">Drink Water</p>
+              <p class="my_habits_page_habits">Workout</p>
+              <p class="my_habits_page_habits">Read 20 Minutes</p>
+              <p class="my_habits_page_habits">No Sugar</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
