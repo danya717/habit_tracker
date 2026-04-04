@@ -1,9 +1,23 @@
-{% extends 'my_habits_base.html' %}
+{% extends 'base.html' %}
 
 {% block title %}
     My Habits
 {% endblock %}
 
 {% block page_title %}
-    <p class="main_page_title">My Habits</p>
+    My Habits
+{% endblock %}
+
+{% block all_habits %}
+    <div class="all_habits_menu">
+        <div class="habits_title_menu">
+            <p class="all_habits_menu_title">Habit</p>
+        </div>
+        <div class="all_habits">
+          <p class="my_habits_page_habits">Drink Water</p>
+          <p class="my_habits_page_habits">Workout</p>
+          <p class="my_habits_page_habits">Read 20 Minutes</p>
+          <p class="my_habits_page_habits">No Sugar</p>
+        </div>
+    </div>
 {% endblock %}
