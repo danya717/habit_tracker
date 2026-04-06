@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .main_page {
     background-color: #F2F3F4;
     width: 50%;
@@ -7,175 +11,79 @@
     bottom: 0%;
 }
 
-.top_bar {
-    background-color: #4863A0;
-    width: 100%;
-    height: 5%;
+.menu {
+    background-color: #E2E3E2;
+    width: 20%;
+    height: 80%;
     position: absolute;
 }
 
-.top_bar_paths {
+.menu_paths {
     position: absolute;
-    display: flex;
-    gap: 5%;
+    display: grid;
+    gap: 30%;
     width: 100%;
     left: 30%;
-    top: 25%;
+    top: 20%;
 }
 
-.top_bar_path {
+.menu_path {
     color: white;
     text-decoration: none;
 }
 
-.top_bar_path:hover {
+.menu_path:hover {
     text-decoration: underline;
     underline-color: blue;
 }
 
-.main_page_title {
-    color: white;
-    font-family: sans-serif;
-    font-size: 25px;
+.daily_momentum_square {
+    background-color: #E2E3E2;
+    width: 45%;
+    height: 32%;
     position: absolute;
-    top: -55%;
-    left: 1%;
-}
-
-.streak_bar {
-    background-color: white;
-    width: 100%;
-    height: 10%;
-    position: absolute;
-    left: 0%;
-    top: 5%;
-}
-
-.streak_title {
-    color: black;
-    font-family: sans-serif;
-    font-size: 20px;
-    position: absolute;
-    left: 1%;
-    top: -15%;
-}
-
-.streak_text_row {
-    position: absolute;
-    display: flex;
-    gap: 5%;
-    width: 100%;
-    left: 1%;
-    top: 60%;
-}
-
-.total_habits_text {
-    position: absolute;
-    top: -90%;
-    left: 40%;
-}
-
-.week_days_bar {
-    background-color: #F5F5F5;
-    border: 1px solid #DDD6E1;
-    width: 100%;
-    height: 10%;
-    position: absolute;
-    left: 0%;
-    top: 15%;
-}
-
-.week_days_letters {
-    font-size: 25px;
-    font-family: sans-serif;
-    position: absolute;
-    display: flex;
-    gap: 25%;
-    top: 15%;
-    left: 30%;
-}
-
-.tasks {
-    border: 1px solid #DDD6E1;
-    background-color: #F5F5F5;
-    width: 100%;
-    height: 45%;
-    position: absolute;
-    top: 25%;
-}
-
-.task1 {
-    border: 1px solid #DDD6E1;
-    background-color: white;
-    width: 40%;
-    height: 40%;
-    position: absolute;
-    left: 5%;
-    top: 5%;
-}
-
-.task2 {
-    border: 1px solid #DDD6E1;
-    background-color: white;
-    width: 40%;
-    height: 40%;
-    position: absolute;
-    left: 55%;
-    top: 5%;
-}
-
-.task3 {
-    border: 1px solid #DDD6E1;
-    background-color: white;
-    width: 40%;
-    height: 40%;
-    position: absolute;
-    left: 5%;
-    top: 55%;
-}
-.task4 {
-    border: 1px solid #DDD6E1;
-    background-color: white;
-    width: 40%;
-    height: 40%;
-    position: absolute;
-    left: 55%;
-    top: 55%;
-}
-
-.tasks_title {
-    font-family: sans-serif;
-    position: absolute;
-    left: 10%;
+    left: 25%;
     top: 10%;
 }
 
-.all_habits_menu {
-    background-color: white;
-    width: 90%;
-    height: 40%;
+.daily_momentum_square_context {
     position: absolute;
-    left: 5%;
-    top: 20%;
-}
-
-.all_habits {
-    position: absolute;
-    left: 5%;
-    top: 20%;
     display: grid;
-    gap: 0px;
+    gap: 10%;
+    left: 5%;
+    top: 5%;
 }
 
-.habits_title_menu {
-    background-color: grey;
+.daily_momentum_title {
+    color: #3c8256;
+    font-size: 30px;
     position: absolute;
-    width: 100%;
-    height: 15%;
+    top: 5%;
+    left: 5%;
+    width: 20%;
+    font-family: sans-serif;
 }
 
-.all_habits_menu_title {
+.amount_of_completed_tasks {
+    color: #59bf8f;
+    font-size: 30px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.momentum_description {
+    color: #3c8256;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 50%;
+}
+
+.view_insights_button  {
+    background-color: #59bf8f;
     position: absolute;
     left: 5%;
-    top: -5%;
+    top: 85%;
 }

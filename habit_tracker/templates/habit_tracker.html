@@ -1,51 +1,10 @@
 {% extends 'base.html' %}
 
-{% block title %}
-    HabitTracker
-{% endblock %}
-
-{% block page_title %}
-    HabitTracker
-{% endblock %}
-
-{% block streak_bar %}
-    <div class="streak_bar">
-        <p class="streak_title">Keep the Streak Going!</p>
-        <div class="streak_text_row">
-            <b class="current_streak_text">Current Streak: 12</b>
-            <b class="best_streak_text">Best Streak: 24</b>
-            <p class="total_habits_text">Total Habits Completed: 184</p>
-        </div>
-    </div>
-{% endblock %}
-
-{% block week_days_bar %}
-    <div class="week_days_bar">
-        <div class="week_days_letters">
-            <b>M</b>
-            <b>T</b>
-            <b>W</b>
-            <b>T</b>
-            <b>F</b>
-            <b>S</b>
-            <b>S</b>
-        </div>
-    </div>
-{% endblock %}
-
-{% block tasks %}
-    <div class="tasks">
-        <div class="task1">
-            <b class="tasks_title">💧Drink Water💧</b>
-        </div>
-        <div class="task2">
-            <b class="tasks_title">🏋️Workout💪</b>
-        </div>
-        <div class="task3">
-            <b class="tasks_title">📚Read 20 Minutes📖</b>
-        </div>
-        <div class="task4">
-            <b class="tasks_title">🧁No sugar🍦</b>
-        </div>
+{% block daily_momentum %}
+    <div class="daily_momentum_square">
+        <b class="daily_momentum_title">Tasks Completed:</b>
+        <b class="amount_of_completed_tasks">0 of 4</b>
+        <b class="momentum_description">You're making incredible progress today.</b>
+        <button class="view_insights_button">View Insights</button>
     </div>
 {% endblock %}
