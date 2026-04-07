@@ -11,6 +11,23 @@ body {
     bottom: 0%;
 }
 
+.pages_title {
+    color: #59bf8f;
+    font-family: sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 5%;
+}
+
+.pages_second_title {
+    color: #3c8256;
+    font-family: sans-serif;
+    font-size: 10px;
+    position: absolute;
+    left: 7%;
+    top: 7%;
+}
+
 .menu {
     background-color: #E2E3E2;
     width: 20%;
@@ -28,16 +45,17 @@ body {
 }
 
 .menu_path {
-    color: white;
+    color: #3c8256;
     text-decoration: none;
 }
 
 .menu_path:hover {
-    text-decoration: underline;
-    underline-color: blue;
+    color: #59bf8f;
 }
 
 .daily_momentum_square {
+    border: 1px solid #E2E3E2;
+    border-radius: 20px;
     background-color: #E2E3E2;
     width: 45%;
     height: 32%;
@@ -81,9 +99,89 @@ body {
     width: 50%;
 }
 
-.view_insights_button  {
-    background-color: #59bf8f;
+.view_insights_button {
+    border: 1px solid #59BF8F;
+    border-radius: 20px;
+    color: #3c8256;
+    background-color: #59BF8F;
     position: absolute;
     left: 5%;
     top: 85%;
+}
+
+.streak_box {
+    border: 1px solid #E2E3E2;
+    border-radius: 20px;
+    background-color: #A7BED3;
+    position: absolute;
+    width: 20%;
+    height: 32%;
+    left: 75%;
+    top: 10%;
+}
+
+.streak_title {
+    color: #3c8256;
+    font-family: sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.streak_description {
+    color: #3c8256;
+    font-size: 10px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.tasks {
+    background-color: #F2F3F4;
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    left: 25%;
+    top: 50%;
+}
+
+.task1 {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+}
+.task2 {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 20%;
+}
+
+
+.task3 {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 20%;
+}
+
+
+.task4 {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 20%;
 }

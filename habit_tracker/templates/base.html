@@ -8,7 +8,8 @@
 <body>
     <div class="main_page">
         <div class="menu">
-            <p class="main_page_title">{% block page_title %}{% endblock %}</p>
+            <p class="pages_title">The Sanctuary</p>
+            <p class="pages_second_title">DAILY RITUAL</p>
             <div class="menu_paths">
                 {% for path in paths %}
                     <a class="menu_path" href="{% url path %}">{{ path }}</a>
@@ -19,7 +20,7 @@
         {% block daily_momentum %}
         {% endblock %}
 
-        {% block week_days_bar %}
+        {% block streak_box %}
         {% endblock %}
 
         {% block tasks %}
