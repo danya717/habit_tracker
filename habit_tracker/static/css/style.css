@@ -193,14 +193,14 @@ body {
     width: 60%;
     position: absolute;
     left: 25%;
-    top: 10%;
+    top: 5%;
 }
 
 .create_task_page_deep_description {
-    width: 60%;
+    width: 55%;
     position: absolute;
     left: 25%;
-    top: 23%;
+    top: 18%;
 }
 
 .creating_habit_field {
@@ -211,10 +211,12 @@ body {
     height: 13%;
     position: absolute;
     left: 25%;
-    top: 35%;
+    top: 30%;
 }
 
 .creating_habit_input {
+    border: 1px solid black;
+    border-radius: 10px;
     font-family: sans-serif;
     font-size: 20px;
     width: 80%;
@@ -240,14 +242,201 @@ body {
     height: 25%;
     position: absolute;
     left: 25%;
-    top: 50%;
+    top: 45%;
 }
 
 .frequency_switch_title {
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     position: absolute;
     left: 10%;
     top: 10%;
+}
 
+.task_notes_field {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    left: 25%;
+    top: 73%;
+    width: 50%;
+    height: 20%;
+}
+
+.task_notes_title {
+    font-family: sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.adding_notes_input {
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    width: 80%;
+    height: 50%;
+}
+
+.confirmation_habit_button {
+    border: 1px solid #59BF8F;
+    border-radius: 20px;
+    color: #3c8256;
+    background-color: #59BF8F;
+    position: absolute;
+    left: 60%;
+    top: 94%;
+    width: 12%;
+    height: 5%;
+}
+
+.create_task_page_focus_field {
+    border: 1px solid #59bf8f;
+    border-radius: 10px;
+    background-color: #59bf8f;
+    position: absolute;
+    left: 80%;
+    top: 20%;
+    width: 18%;
+    height: 8%;
+}
+
+.focus_title {
+    color: #3c8256;
+    font-family: sans-serif;
+    position: absolute;
+    left: 30%;
+    top: -5%;
+}
+
+.focus_description {
+    color: #3c8256;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 100%:
+}
+
+.create_task_page_ritual_builder_field {
+    border: 1px solid #59bf8f;
+    border-radius: 20px;
+    background-color: #3c8256;
+    position: absolute;
+    left: 77%;
+    top: 30%;
+    width: 22%;
+    height: 30%;
+}
+
+.ritual_builder_title {
+    color: #59bf8f;
+    font-size: 15px;
+    font-family: sans-serif;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.ritual_builder_description {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 95%;
+}
+
+.ritual_builder_recommendations {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    left: 15%;
+    top: 48%;
+}
+
+.create_task_page_user_suggesting_field {
+    border: 1px solid ##BCA0DC;
+    border-radius: 10px;
+    background-color: #BCA0DC;
+    position: absolute;
+    left: 77%;
+    top: 62%;
+    width: 22%;
+    height: 20%;
+}
+
+.user_suggesting_title {
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 5%;
+    left: 12%;
+}
+
+.user_suggesting1_title {
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.user_suggesting1_description {
+    font-family: sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.user_suggesting2_title {
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+
+.user_suggesting2_description {
+    font-family: sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+.create_task_page_photo_insertion {
+    border: 1px dashed #A7BED3;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    left: 77%;
+    top: 84%;
+    width: 22%;
+    height: 15%;
+}
+
+.photo_insertion_title {
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+}
+
+.photo_insertion_description {
+    font-family: sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    width: 95%;
 }

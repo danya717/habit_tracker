@@ -28,3 +28,52 @@
         <b class="frequency_switch_title">FREQUENCY</b>
     </div>
 {% endblock %}
+
+{% block creating_task_notes %}
+    <div class="task_notes_field">
+        <b class="task_notes_title">NOTES & AFFIRMATIONS</b>
+        <input type="text" class="adding_notes_input">
+    </div>
+{% endblock %}
+
+{% block confirmation_habit_button %}
+    <button class="confirmation_habit_button">Create Habit</button>
+{% endblock %}
+
+{% block create_task_page_focus_field %}
+    <div class="create_task_page_focus_field">
+        <p class="focus_title">Daily Focus</p>
+        <p class="focus_description">4 active rituals</p>
+    </div>
+{% endblock %}
+
+{% block create_task_page_ritual_builder_field %}
+    <div class="create_task_page_ritual_builder_field">
+        <b class="ritual_builder_title">Ritual Builder</b>
+        <p class="ritual_builder_description">We've found that habits linked to a specific time or existing activity are 3x more likely to stick.</p>
+        <li class="ritual_builder_recommendations">
+            <p>Keep it specific</p>
+            <p>Set a clear trigger</p>
+            <p>Celebrate the win</p>
+        </li>
+    </div>
+{% endblock %}
+
+{% block create_task_page_user_suggesting_field %}
+    <div class="create_task_page_user_suggesting_field">
+        <b class="user_suggesting_title">Suggested for you</b>
+
+        <b class="user_suggesting1_title">Digital Detox</b>
+        <p class="user_suggesting1_description">No screens 1 hour before bed</p>
+
+        <b class="user_suggesting2_title">Gratitude Log</b>
+        <p class="user_suggesting2_description">Write 3 things you're thankful for</p>
+    </div>
+{% endblock %}
+
+{% block create_task_page_photo_insertion %}
+    <div class="create_task_page_photo_insertion">
+        <b class="photo_insertion_title">Inspiration</b>
+        <p class="photo_insertion_description">Attach a photo that motivates this habit.</p>
+    </div>
+{% endblock %}
