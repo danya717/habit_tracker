@@ -190,14 +190,14 @@ body {
     color: #3C8256;
     font-size: 40px;
     font-family: sans-serif;
-    width: 60%;
+    width: 50%;
     position: absolute;
     left: 25%;
     top: 5%;
 }
 
 .create_task_page_deep_description {
-    width: 55%;
+    width: 50%;
     position: absolute;
     left: 25%;
     top: 18%;
@@ -439,4 +439,179 @@ body {
     top: 55%;
     left: 5%;
     width: 95%;
+}
+
+
+
+.weekly_completion_field {
+    border: 1px solid #C6DBEF;
+    border-radius: 10px;
+    background-color: #C6DBEF;
+    width: 25%;
+    height: 15%;
+    position: absolute;
+    left: 73%;
+    top: 5%;
+}
+
+.weekly_completion_title {
+    color: #3c8256;
+    font-family: sans-serif;
+    font-size: 12px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+
+.analytics_page_procent_of_completed_tasks {
+    color: #3c8256;
+    font-size: 50px;
+    position: absolute;
+    left: 34%;
+    top: 25%;
+}
+
+.daily_progress_trend {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    width: 52%;
+    height: 30%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+}
+
+.daily_progress_trend_title {
+    font-family: sans-serif;
+    font-size: 15px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.daily_progress_trend_description {
+    font-family: sans-serif;
+    font-size: 10px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.streak_growth_field {
+    border: 1px solid #BCA0DC;
+    border-radius: 10px;
+    background-color: #EDE7F6;
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    left: 25%;
+    top: 65%;
+}
+
+.streak_growth_title {
+    color: #3c8256;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.streak_growth_description {
+    color: #3c8256;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+
+.amount_of_streak_days {
+    color: #BCA0DC;
+    font-family: sans-serif;
+    font-size: 25px;
+    position: absolute;
+    left: 10%;
+    top: 75%;
+}
+
+.amount_of_streak_days_word {
+    color: #3c8256;
+    font-family: sans-serif;
+    font-size: 10px;
+    position: absolute;
+    left: 20%;
+    top: 80%;
+}
+
+.consistency_field {
+    border: 1px solid #E2E3E2;
+    border-radius: 10px;
+    background-color: #E2E3E2;
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    left: 79%;
+    top: 30%;
+}
+
+.consistency_field_title {
+    color: #3c8256;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+}
+
+.consistency_field_description {
+    color: #3c8256;
+    font-family: sans-serif;
+    font-size: 13px;
+    position: absolute;
+    left: 15%;
+    top: 55%;
+}
+
+.view_details_button {
+    color: #3c8256;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: absolute;
+    left: 23%;
+    top: 83%;
+}
+
+.activity_breakdown_field {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    width: 52%;
+    height: 30%;
+    left: 47%;
+    top: 65%;
+}
+
+.activity_breakdown_field_title {
+    color: #3c8256;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.activity_breakdown_field_items {
+    color: #3c8256;
+    font-family: sans-serif;
+    font-size: 13px;
+    display: grid;
+    gap: 30px;
+    position: absolute;
+    left: 15%;
+    top: 30%;
 }
