@@ -19,7 +19,6 @@
 {% block creating_habit_field %}
     <div class="creating_habit_field">
         <b class="creating_habit_field_title">WHAT WILL YOU PRACTICE?</b>
-        <input type="text" class="creating_habit_input">
     </div>
 {% endblock %}
 
@@ -37,7 +36,11 @@
 {% endblock %}
 
 {% block confirmation_habit_button %}
-    <button class="confirmation_habit_button">Create Habit</button>
+    <form method="GET">
+        {{form.as_p}}
+        <p><input type="submit" class="confirmation_habit_button"></p>
+    </form>
+<!--    <button class="">Create Habit</button>-->
 {% endblock %}
 
 {% block create_task_page_focus_field %}

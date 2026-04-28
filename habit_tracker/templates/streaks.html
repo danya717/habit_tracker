@@ -7,3 +7,42 @@
 {% block page_title %}
     Stats
 {% endblock %}
+
+{% block streak_page_current_streak_field %}
+    <div class="current_streak_field">
+        <h1 class="current_streak_fields_title">0 Days Streak</h1>
+        <p class="current_streak_fields_description">Consistency is the secret ingredient of mastery. You've maintained your rituals for 0 weeks straight.
+            Keep the flame alive.
+        </p>
+    </div>
+{% endblock %}
+
+{% block best_streak_field %}
+    <div class="best_streak_field">
+        <h2 class="best_streak_fields_title">All-Time Best</h2>
+        <h2 class="num_of_total_rituals_kept">0</h2>
+        <b class="text_of_total_rituals_kept">TOTAL RITUALS KEPT</b>
+    </div>
+{% endblock %}
+
+{% block activate_streaks_title %}
+    <h1 class="activate_streaks_title">Active Streaks</h1>
+{% endblock %}
+
+{% block activate_streaks %}
+    <div class="activate_streaks">
+        <div class="activate_streak1">
+            <h2 class="activate_streak1_title">Workout</h2>
+            <p class="activate_streak1_description">20 Min</p>
+        </div>
+        <div class="activate_streak2">
+            <h2 class="activate_streak2_title">Stay Hydrated</h2>
+            <p class="activate_streak2_description">2 Litres of water</p>
+        </div>
+        <div class="activate_streak3">
+            <h2 class="activate_streak3_title">Reading</h2>
+            <p class="activate_streak3_description">Read 20 Pages</p>
+        </div>
+    </div>
+
+{% endblock %}

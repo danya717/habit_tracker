@@ -615,3 +615,81 @@ body {
     left: 15%;
     top: 30%;
 }
+
+.current_streak_field {
+    border: 1px solid #E2E3E2;
+    border-radius: 15px;
+    background-color: #E2E3E2;
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+}
+
+.current_streak_fields_title {
+    color: #3c8256;
+    font-family: sans-serif;
+    position: absolute;
+    left: 7%;
+    top: 5%;
+}
+
+.current_streak_fields_description {
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    left: 7%;
+    top: 35%;
+}
+
+.best_streak_field {
+    border: 1px solid #3c8256;
+    border-radius: 15px;
+    background-color: #3c8256;
+    width: 23%;
+    height: 25%;
+    position: absolute;
+    left: 76%;
+    top: 10%;
+}
+
+.best_streak_fields_title {
+    font-family: sans-serif;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+    left: 15%;
+    top: 25%;
+}
+
+.num_of_total_rituals_kept {
+    color: lightgreen;
+    font-size: 30px;
+    position: absolute;
+    left: 45%;
+    top: 35%;
+}
+
+.text_of_total_rituals_kept {
+    font-family: sans-serif;
+    font-size: 10px;
+    width: 100%;
+    color: lightgreen;
+    position: absolute;
+    left: 20%;
+    top: 70%;
+}
+
+input, textarea {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 45%;
+    height: 7%;
+    position: absolute;
+    left: 27%;
+    top: 34%;
+}
