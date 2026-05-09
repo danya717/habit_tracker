@@ -31,12 +31,12 @@
 {% block creating_task_notes %}
     <div class="task_notes_field">
         <b class="task_notes_title">NOTES & AFFIRMATIONS</b>
-        <input type="text" class="adding_notes_input">
     </div>
 {% endblock %}
 
 {% block confirmation_habit_button %}
-    <form method="GET">
+    <form method="POST">
+        {% csrf_token %}
         {{form.as_p}}
         <p><input type="submit" class="confirmation_habit_button"></p>
     </form>

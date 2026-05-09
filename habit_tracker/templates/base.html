@@ -12,11 +12,18 @@
             <p class="pages_title">The Sanctuary</p>
             <p class="pages_second_title">DAILY RITUAL</p>
             <div class="menu_paths">
-                {% for path in paths %}
-                    <a class="menu_path" href="{% url path %}">{{ path }}</a>
-                {% endfor %}
+                <a class="menu_path" href="{% url 'Dashboard'%}">Dashboard</a>
+                <a class="menu_path" href="{% url 'Create Task'%}">Create Task</a>
+                <a class="menu_path" href="{% url 'Analytics'%}">Analytics</a>
+                <a class="menu_path" href="{% url 'Streaks'%}">Streaks</a>
+                <a class="menu_path" href="{% url 'Settings'%}">Settings</a>
+
+
             </div>
         </div>
+
+        {% block daily_or_weekly_habit_switcher %}
+        {% endblock %}
 
         {% block daily_momentum %}
         {% endblock %}
@@ -85,6 +92,9 @@
 
         {% block activate_streaks %}
         {% endblock %}
+
+
+
 
     </div>
 <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>-->

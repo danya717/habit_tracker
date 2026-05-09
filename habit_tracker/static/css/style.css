@@ -214,17 +214,6 @@ body {
     top: 30%;
 }
 
-.creating_habit_input {
-    border: 1px solid black;
-    border-radius: 10px;
-    font-family: sans-serif;
-    font-size: 20px;
-    width: 80%;
-    height: 30%;
-    position: absolute;
-    left: 10%;
-    top: 50%;
-}
 
 .creating_habit_field_title {
     font-size: 70%;
@@ -271,17 +260,6 @@ body {
     top: 10%;
     left: 5%;
 }
-
-.adding_notes_input {
-    border: 1px solid black;
-    border-radius: 10px;
-    position: absolute;
-    top: 30%;
-    left: 8%;
-    width: 80%;
-    height: 50%;
-}
-
 .confirmation_habit_button {
     border: 1px solid #59BF8F;
     border-radius: 20px;
@@ -682,7 +660,8 @@ body {
     top: 70%;
 }
 
-input, textarea {
+
+.create_habit_input {
     border: 1px solid black;
     border-radius: 10px;
     font-family: sans-serif;
@@ -692,4 +671,24 @@ input, textarea {
     position: absolute;
     left: 27%;
     top: 34%;
+}
+
+.create_notes_input {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    position: absolute;
+    width: 45%;
+    height: 12%;
+    left: 27%;
+    top: 78%;
+}
+
+.daily_or_weekly_task_switcher {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    width: 20%;
+    height: 20%;
 }

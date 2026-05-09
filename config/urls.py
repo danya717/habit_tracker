@@ -16,13 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from habit_tracker.views import top_bar_paths
+from habit_tracker.views import top_bar_paths, daily_or_weekly_habit_switcher, habits
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', top_bar_paths, name='Dashboard'),
-    path('create_task', top_bar_paths, name='Create Task'),
+    path('create_task', habits, name='Create Task'),
     path('analytics', top_bar_paths, name='Analytics'),
     path('streaks', top_bar_paths, name='Streaks'),
-    path('settings', top_bar_paths, name='Settings')
+    path('settings', top_bar_paths, name='Settings'),
+    path('', daily_or_weekly_habit_switcher, name='Daily Tasks'),
+    path('weekly_habits', daily_or_weekly_habit_switcher, name='Weekly Tasks'),
 ]

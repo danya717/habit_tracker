@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 
+{% block daily_or_weekly_habit_switcher %}
+    <div class="daily_or_weekly_task_switcher">
+        <p>test</p>
+        {% for button_path in button_paths %}
+            <a class="daily_or_weekly_switch" href="{% url button_path %}">{{ button_path }}</a>
+        {% endfor %}
+    </div>
+{% endblock %}
+
 {% block daily_momentum %}
     <div class="daily_momentum_square">
         <b class="daily_momentum_title">Tasks Completed:</b>
@@ -32,3 +41,6 @@
         </div>
     </div>
 {% endblock %}
+
+
+
