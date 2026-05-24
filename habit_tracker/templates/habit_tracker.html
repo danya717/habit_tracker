@@ -2,10 +2,12 @@
 
 {% block daily_or_weekly_habit_switcher %}
     <div class="daily_or_weekly_task_switcher">
-        <p>test</p>
-        {% for button_path in button_paths %}
-            <a class="daily_or_weekly_switch" href="{% url button_path %}">{{ button_path }}</a>
-        {% endfor %}
+        <a class="daily_or_weekly_switch" href="{% url 'Dashboard' %}">
+            Daily Tasks
+        </a>
+        <a class="daily_or_weekly_switch" href="{% url 'Weekly Tasks' %}">
+            Weekly Tasks
+        </a>
     </div>
 {% endblock %}
 

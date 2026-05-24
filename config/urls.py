@@ -25,6 +25,5 @@ urlpatterns = [
     path('analytics', top_bar_paths, name='Analytics'),
     path('streaks', top_bar_paths, name='Streaks'),
     path('settings', profile_configuration, name='Settings'),
-    path('', daily_or_weekly_habit_switcher, name='Daily Tasks'),
     path('weekly_habits', daily_or_weekly_habit_switcher, name='Weekly Tasks'),
 ]

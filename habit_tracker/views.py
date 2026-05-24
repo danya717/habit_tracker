@@ -16,7 +16,6 @@ def daily_or_weekly_habit_switcher(request):
     button_path = button_path.replace('/', '')
     if button_path == '':
         button_path = 'habit_tracker'
-    button_paths = ['Daily Tasks', 'Weekly Tasks']
     context = {'button_paths' : button_paths}
     return render(request, f'{button_path}.html', context=context)
 
