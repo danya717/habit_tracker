@@ -7,3 +7,18 @@
 {% block page_title %}
     Stats
 {% endblock %}
+
+{% block settings_page %}
+<div class="settings_page">
+    <h2>Profile Settings</h2>
+    <div class="profile_settings_field">
+        <b class="profile_settings_title">Public Profile</b>
+<!--        <button>Save Changes</button>-->
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <p><input type="submit" class="confirm_prof_changes"></p>
+        </form>
+    </div>
+</div>
+{% endblock %}
