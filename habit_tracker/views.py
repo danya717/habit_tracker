@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from habit_tracker.forms import CreateTaskForm, ProfileConfigurationForm
 from django.shortcuts import redirect
+from habit_tracker.models import User, Tasks
 
 def top_bar_paths(request):
     path = request.path
@@ -26,28 +27,23 @@ def create_task(request):
             data = form.cleaned_data
             create_habit = data.get('create_habit')
             create_notes = data.get('create_notes')
-            with open('data.csv', 'a') as file:
-                file.write(f'{create_habit}|{create_notes}\n')
-            # print(data)
+            Tasks.objects.create(create_habit=create_habit, create_notes=create_notes)
             return redirect('Create Task')
-        form = CreateTaskForm()
-        context = {'form': form}
-        return render(request, 'create_task.html', context=context)
     form = CreateTaskForm()
     return render(request, 'create_task.html', {'form': form})
 
-def get_task(request):
-    with open('data.csv', 'r') as file:
-        data = file.readlines()
-        if len(data) > 0:
-            task_data_1 = data[-1]
-            task_name_1 = task_data_1.split('|')[0]
-            task_note_1 = task_data_1.split('|')[0]
-        else:
-            task_name_1 = ''
-            task_note_1 = ''
-        context = {'task_name_1': task_name_1, 'task_note_1': task_note_1}
-        return render(request, 'habit_tracker.html', context=context)
+# def get_task(request):
+#     with open('data.csv', 'r') as file:
+#         data = file.readlines()
+#         if len(data) > 0:
+#             task_data_1 = data[-1]
+#             task_name_1 = task_data_1.split('|')[0]
+#             task_note_1 = task_data_1.split('|')[0]
+#         else:
+#             task_name_1 = ''
+#             task_note_1 = ''
+#         context = {'task_name_1': task_name_1, 'task_note_1': task_note_1}
+#         return render(request, 'habit_tracker.html', context=context)
 
 def profile_configuration(request):
     if request.method == 'POST':
@@ -55,22 +51,12 @@ def profile_configuration(request):
         if form.is_valid():
             data = form.cleaned_data
             name = data.get('name')
+            birth_date = data.get('birth_date')
+            phone = data.get('phone')
             email = data.get('email')
             bio = data.get('bio')
-            with open('data1.csv', 'a') as file:
-                file.write(f'{name}|{email}|{bio}\n')
+            User.objects.create(name=name, birth_date=birth_date, phone=phone, email=email, bio=bio)
             return redirect('Settings')
-    with open('data1.csv', 'r') as file:
-        data = file.readlines()
-        if len(data) > 0:
-            profile_data_1 = data[-1]
-            profile_name_1 = profile_data_1.split('|')[0]
-            profile_email_1 = profile_data_1.split('|')[1]
-            profile_bio_1 = profile_data_1.split('|')[2]
-        else:
-            profile_name_1 = ''
-            profile_email_1 = ''
-            profile_bio_1 = ''
     form = ProfileConfigurationForm()
-    context = {'form': form, 'profile_name_1': profile_name_1, 'profile_email_1': profile_email_1, 'profile_bio_1': profile_bio_1}
+    context = {'form': form}
     return render(request, 'settings.html', context=context)

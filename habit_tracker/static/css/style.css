@@ -761,7 +761,7 @@ body {
     border-radius: 5px;
     position: absolute;
     width: 30%;
-    top: 30%;
+    top: 20%;
     left: 20%;
 }
 
@@ -770,8 +770,28 @@ body {
     border-radius: 5px;
     position: absolute;
     width: 30%;
-    top: 30%;
+    top: 20%;
     left: 60%;
+}
+
+.birth_date_input {
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    width: 70%;
+    height: 7%;
+    top: 32%;
+    left: 20%;
+}
+
+.phone_num_input {
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    width: 70%;
+    height: 7%;
+    top: 43%;
+    left: 20%;
 }
 
 .bio_input {
