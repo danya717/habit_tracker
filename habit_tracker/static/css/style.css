@@ -783,3 +783,11 @@ body {
     top: 55%;
     left: 20%;
 }
+
+name_label {
+    color: red;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+
