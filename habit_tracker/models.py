@@ -14,5 +14,5 @@ class Streaks(models.Model):
 
 class Tasks(models.Model):
     task = models.CharField(max_length=40)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    # user = models.ForeignKey(User, on_delete=models.CASCADE)
     note = models.CharField(max_length=255, default='')

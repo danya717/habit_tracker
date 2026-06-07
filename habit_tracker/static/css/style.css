@@ -661,7 +661,7 @@ body {
 }
 
 
-.create_habit_input {
+.create_task_input {
     border: 1px solid black;
     border-radius: 10px;
     font-family: sans-serif;

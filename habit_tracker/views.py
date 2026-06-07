@@ -25,25 +25,25 @@ def create_task(request):
         form = CreateTaskForm(request.POST)
         if form.is_valid():
             data = form.cleaned_data
-            create_habit = data.get('create_habit')
-            create_notes = data.get('create_notes')
-            Tasks.objects.create(create_habit=create_habit, create_notes=create_notes)
+            create_task = data.get('task')
+            create_notes = data.get('notes')
+            Tasks.objects.create(task=create_task, note=create_notes)
             return redirect('Create Task')
     form = CreateTaskForm()
     return render(request, 'create_task.html', {'form': form})
 
-# def get_task(request):
-#     with open('data.csv', 'r') as file:
-#         data = file.readlines()
-#         if len(data) > 0:
-#             task_data_1 = data[-1]
-#             task_name_1 = task_data_1.split('|')[0]
-#             task_note_1 = task_data_1.split('|')[0]
-#         else:
-#             task_name_1 = ''
-#             task_note_1 = ''
-#         context = {'task_name_1': task_name_1, 'task_note_1': task_note_1}
-#         return render(request, 'habit_tracker.html', context=context)
+def get_task(request):
+    with open('data.csv', 'r') as file:
+        data = file.readlines()
+        if len(data) > 0:
+            task_data_1 = data[-1]
+            task_name_1 = task_data_1.split('|')[0]
+            task_note_1 = task_data_1.split('|')[0]
+        else:
+            task_name_1 = ''
+            task_note_1 = ''
+        context = {'task_name_1': task_name_1, 'task_note_1': task_note_1}
+        return render(request, 'habit_tracker.html', context=context)
 
 def profile_configuration(request):
     if request.method == 'POST':
