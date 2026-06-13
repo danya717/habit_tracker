@@ -42,7 +42,8 @@ def get_task(request):
         else:
             task_name_1 = ''
             task_note_1 = ''
-        context = {'task_name_1': task_name_1, 'task_note_1': task_note_1}
+        all_tasks = Tasks.objects.all()
+        context = {'task_name_1': task_name_1, 'task_note_1': task_note_1, 'all_tasks': all_tasks}
         return render(request, 'habit_tracker.html', context=context)
 
 def profile_configuration(request):
