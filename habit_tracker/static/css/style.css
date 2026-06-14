@@ -140,51 +140,59 @@ body {
 .tasks {
     background-color: #F2F3F4;
     position: absolute;
+
     width: 70%;
     height: 40%;
     left: 25%;
     top: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: #5ABF8A #E4E5E6;
+
+    padding: 10px;
+    box-sizing: border-box
+}
+
+.tasks::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tasks::-webkit-scrollbar-track {
+    background: #E4E5E6;
+    border-radius: 10px;
+}
+
+.tasks::-webkit-scrollbar-thumb {
+    background: #5ABF8A
+    border-radius: 10px;
+    border: 2px solid #E4E5E6
+}
+
+.tasks::-webkit-scrollbar-thumb:hover {
+    background: #3F9369
 }
 
 .task1 {
     background-color: white;
     border: 1px solid white;
     border-radius: 10px;
-    position: absolute;
-    width: 100%;
-    height: 20%;
-}
-.task2 {
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    height: 20%;
+    width: auto;
+    height: auto;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
-
-.task3 {
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    position: absolute;
-    top: 60%;
-    width: 100%;
-    height: 20%;
+.task1_title {
+    margin: 0;
 }
-
-.task4 {
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    position: absolute;
-    top: 90%;
-    width: 100%;
-    height: 20%;
-}
-
 
 .create_task_pag_description {
     color: #3C8256;
