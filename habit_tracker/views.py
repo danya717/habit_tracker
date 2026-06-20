@@ -61,3 +61,10 @@ def profile_configuration(request):
     form = ProfileConfigurationForm()
     context = {'form': form}
     return render(request, 'settings.html', context=context)
+
+def view_task_details(request):
+    details_path = request.path
+    details_path = details_path.replace('/', '')
+    if details_path == '':
+        details_path = 'habit_tracker'
+    return render(request, f'{details_path}.html')

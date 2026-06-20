@@ -179,7 +179,7 @@ body {
     background: #3F9369
 }
 
-.task1 {
+.task {
     background-color: white;
     border: 1px solid white;
     border-radius: 10px;
@@ -190,7 +190,7 @@ body {
     flex-shrink: 0;
 }
 
-.task1_title {
+.task_title {
     margin: 0;
 }
 
@@ -819,3 +819,92 @@ name_label {
     left: 40%;
 }
 
+.task_details {
+    position: absolute;
+    left: 50%;
+}
+
+.about_task {
+    border: 1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    left: 25%;
+    background: white;
+    width: 70%;
+    height: 40%;
+}
+
+.task_completion {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 10px;
+    left: 25%;
+    background: white;
+    width: 70%;
+    height: 20%;
+    top: 45%;
+}
+
+.task_task_definition {
+    font-family: sans-serif;
+    color: green;
+    position: absolute;
+    left: 5%;
+}
+
+.task_detail_title {
+    font-family: sans-serif;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.task_description_definition {
+    color: green;
+    font-family: sans-serif;
+    position: absolute;
+    left: 5%;
+    top: 35%;
+}
+
+.task_detail_description {
+    font-family: sans-serif;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+}
+
+
+.task_completion_definition {
+    color: green;
+    font-family: sans-serif;
+    position: absolute;
+    left: 5%;
+}
+
+.task_completion_description {
+    font-family: sans-serif;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+
+.task_completion_button {
+    font-family: sans-serif;
+    color: white;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 25%;
+    height: 20%;
+    position: absolute;
+    left: 5%;
+    top: 70%;
+}
+
+hr {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    width: 90%;
+}

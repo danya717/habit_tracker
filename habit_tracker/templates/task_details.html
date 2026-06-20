@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Task Details
+{% endblock %}
+
+{% block page_title %}
+    Task Details
+{% endblock %}
+
+{% block task_details_page %}
+    <div class="task_details_page">
+        <div class="about_task">
+            <h3 class="task_task_definition">Task</h3>
+            <h1 class="task_detail_title">Buy a giraffe</h1>
+            <h3 class="task_description_definition">Description</h3>
+            <p class="task_detail_description">
+                Treat yourself to something that brings joy and a sense of wonder.
+                A giraffe, with its elegance and gentle nature, can be a daily
+                reminder to look at life from a higher perspective.
+            </p>
+            <hr>
+        </div>
+        <div class="task_completion">
+            <h3 class="task_completion_definition">Mark As Completed</h3>
+            <p class="task_completion_description">completing this task helps you maintain your streak and build consistency.</p>
+            <button class="task_completion_button">✔️Task Completed</button>
+        </div>
+    </div>
+{% endblock %}

@@ -30,8 +30,9 @@
 {% block tasks %}
     <div class="tasks">
         {% for task in all_tasks %}
-        <div class="task1">
-            <p class="task1_title">{{task.task}}</p>
+        <div class="task">
+            <p class="task_title">{{task.task}}</p>
+            <a class="task_details" href="{% url 'View Task Details' %}">View Details</a>
         </div>
         {% endfor %}
     </div>
