@@ -821,7 +821,16 @@ name_label {
 
 .task_details {
     position: absolute;
-    left: 50%;
+    left: 40%;
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+    color: green;
+    background: lightgreen;
+    transition-duration: 0.6s;
+}
+
+.task_details:hover {
+    background: white;
 }
 
 .about_task {
@@ -907,4 +916,19 @@ hr {
     left: 5%;
     top: 30%;
     width: 90%;
+}
+
+.task_delete {
+    display: grid;
+    position: absolute;
+    left: 70%;
+    background: green;
+    color: lightgreen;
+    border: 1px solid green;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+
+.task_delete:hover {
+    background: white;
 }

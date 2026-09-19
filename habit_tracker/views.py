@@ -2,6 +2,7 @@ from django.shortcuts import render
 from habit_tracker.forms import CreateTaskForm, ProfileConfigurationForm
 from django.shortcuts import redirect
 from habit_tracker.models import User, Tasks
+from habit_tracker.utils.decorators import call_counter, post_only
 
 def top_bar_paths(request):
     path = request.path
@@ -62,9 +63,14 @@ def profile_configuration(request):
     context = {'form': form}
     return render(request, 'settings.html', context=context)
 
-def view_task_details(request):
-    details_path = request.path
-    details_path = details_path.replace('/', '')
-    if details_path == '':
-        details_path = 'habit_tracker'
-    return render(request, f'{details_path}.html')
+
+def view_task_details(request, task_id):
+    task = Tasks.objects.get(id=task_id)
+    context = {'task': task}
+    return render(request, 'task_details.html', context)
+
+@post_only
+def delete_task(request, task_id):
+    task = Tasks.objects.get(id=task_id)
+    task.delete()
+    return redirect('Dashboard')

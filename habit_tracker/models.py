@@ -12,7 +12,13 @@ class Streaks(models.Model):
     streak = models.PositiveSmallIntegerField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
+
 class Tasks(models.Model):
     task = models.CharField(max_length=40)
     # user = models.ForeignKey(User, on_delete=models.CASCADE)
     note = models.CharField(max_length=255, default='')
+
+    list_display = ['task', 'note']
+
+    def __str__(self):
+        return f'{self.task} | {self.note}'
