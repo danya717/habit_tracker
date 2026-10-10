@@ -17,6 +17,7 @@ class Tasks(models.Model):
     task = models.CharField(max_length=40)
     # user = models.ForeignKey(User, on_delete=models.CASCADE)
     note = models.CharField(max_length=255, default='')
+    is_done = models.BooleanField(default=False)
 
     list_display = ['task', 'note']
 

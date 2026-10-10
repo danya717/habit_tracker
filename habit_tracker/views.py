@@ -21,6 +21,15 @@ def daily_or_weekly_habit_switcher(request):
     context = {'button_paths' : button_paths}
     return render(request, f'{button_path}.html', context=context)
 
+def completed_uncompleted_task_switcher(request):
+    path = request.path
+    path = path.replace('/', '')
+    if path == '':
+        path = 'habit_tracker'
+    paths = ['Completed Tasks']
+    context = {'paths': paths}
+    return render(request, f'{path}.html', context=context)
+
 def create_task(request):
     if request.method == 'POST':
         form = CreateTaskForm(request.POST)
@@ -34,18 +43,10 @@ def create_task(request):
     return render(request, 'create_task.html', {'form': form})
 
 def get_task(request):
-    with open('data.csv', 'r') as file:
-        data = file.readlines()
-        if len(data) > 0:
-            task_data_1 = data[-1]
-            task_name_1 = task_data_1.split('|')[0]
-            task_note_1 = task_data_1.split('|')[0]
-        else:
-            task_name_1 = ''
-            task_note_1 = ''
-        all_tasks = Tasks.objects.all()
-        context = {'task_name_1': task_name_1, 'task_note_1': task_note_1, 'all_tasks': all_tasks}
-        return render(request, 'habit_tracker.html', context=context)
+    all_tasks = Tasks.objects.filter(is_done=True)
+    context = {'all_tasks': all_tasks}
+    return render(request, 'habit_tracker.html', context=context)
+
 
 def profile_configuration(request):
     if request.method == 'POST':
@@ -74,3 +75,8 @@ def delete_task(request, task_id):
     task = Tasks.objects.get(id=task_id)
     task.delete()
     return redirect('Dashboard')
+
+def mark_task_done(request, task_id):
+    Tasks.objects.filter(id=task_id).update(is_done=True)
+    return redirect('Dashboard')
+

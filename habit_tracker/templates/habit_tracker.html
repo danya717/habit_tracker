@@ -28,6 +28,10 @@
 {% endblock %}
 
 {% block tasks %}
+    <div class="task_completion_switcher">
+        <a class="uncompleted_tasks" href="{% url 'Dashboard' %}">Uncompleted task</a>
+        <a class="completed_tasks" href="{% url 'Completed Tasks' %}">Completed Tasks</a>
+    </div>
     <div class="tasks">
         {% for task in all_tasks %}
         <div class="task">

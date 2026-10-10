@@ -17,10 +17,15 @@
             <p class="task_detail_description">{{task.note}}</p>
             <hr>
         </div>
+        {% if not task.is_done %}
         <div class="task_completion">
             <h3 class="task_completion_definition">Mark As Completed</h3>
             <p class="task_completion_description">completing this task helps you maintain your streak and build consistency.</p>
-            <button class="task_completion_button">✔️Task Completed</button>
+            <form method="PATCH" action="{% url 'Mark Task Done' task.id %}">
+                {% csrf_token %}
+                <button class="task_completion_button">✔️Task Completed</button>
+            </form>
         </div>
+        {% endif %}
     </div>
 {% endblock %}

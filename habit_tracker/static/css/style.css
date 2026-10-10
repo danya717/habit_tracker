@@ -932,3 +932,15 @@ hr {
 .task_delete:hover {
     background: white;
 }
+
+.uncompleted_tasks {
+    position: absolute;
+    left: 200px;
+    top: 340px;
+}
+
+.completed_tasks {
+    position: absolute;
+    left: 330px;
+    top: 340px;
+}

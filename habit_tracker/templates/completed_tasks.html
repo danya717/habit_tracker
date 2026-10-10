@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block completed_tasks_page %}
+    <div class=" completed_tasks">
+
+    </div>
+{% endblock %}
+
+{% block daily_momentum %}
+    <div class="daily_momentum_square">
+        <b class="daily_momentum_title">Tasks Completed:</b>
+        <b class="amount_of_completed_tasks">0 of 4</b>
+        <b class="momentum_description">You're making incredible progress today.</b>
+        <button class="view_insights_button">View Insights</button>
+    </div>
+{% endblock %}
+
+{% block streak_box %}
+    <div class="streak_box">
+        <b class="streak_title">12 Day Streak</b>
+        <b class="streak_description">Consistency is the bridge between goals and accomplishment.</b>
+    </div>
+{% endblock %}
+
+{% block tasks %}
+    <div class="task_completion_switcher">
+        <a class="uncompleted_tasks" href="{% url 'Dashboard' %}">Uncompleted task</a>
+        <a class="completed_tasks" href="{% url 'Completed Tasks' %}">Completed Tasks</a>
+    </div>
+{% endblock %}
